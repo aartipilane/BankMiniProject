@@ -13,47 +13,42 @@ import com.BMP.qa.base.BaseClass;
 import com.BMP.qa.pages.LoginPage;
 import com.BMP.qa.utils.ExcelFileUtility;
 
+
 public class TC_01_LoginTest extends BaseClass {
 
 	public WebDriver driver;
 	LoginPage lp;
-	
-	
-	public TC_01_LoginTest()
-	{
+
+	public TC_01_LoginTest() {
 		super();
 	}
-	
+
 	@BeforeMethod
-	public void setUp() throws IOException
-	{
+	public void setUp() throws IOException {
 		readDataFromPropertiesFile();
-		driver=launchBrowserandURL(prop.getProperty("browser"));
-		lp=new LoginPage(driver);
-		
+		driver = launchBrowserandURL(prop.getProperty("browser"));
+		lp = new LoginPage(driver);
+
 	}
-	
+
 	@AfterMethod
-	public void tearDown()
-	{
+	public void tearDown() {
 		driver.quit();
 	}
-	
-	@DataProvider(name="userCredentials")
-	public Object[][] supplyTestData() throws EncryptedDocumentException, IOException
-	{
-		
+
+	@DataProvider(name = "userCredentials")
+	public Object[][] supplyTestData() throws EncryptedDocumentException, IOException {
+
 		Object[][] data = ExcelFileUtility.readDataFromExcelFile("Sheet1");
 		return data;
 	}
-	
-	@Test(dataProvider="userCredentials")
-	public void loginWithValidCredentials(String userid , String password)
-	{
+
+	@Test(dataProvider = "userCredentials")
+	public void loginWithValidCredentials(String userid, String password) {
 		lp.setUserID(userid);
 		lp.setPassword(password);
 		lp.clickOnLoginButton();
-		
+
 	}
-	
+
 }

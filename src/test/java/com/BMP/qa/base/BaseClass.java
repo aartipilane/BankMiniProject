@@ -1,5 +1,6 @@
 package com.BMP.qa.base;
 
+import org.testng.annotations.AfterMethod;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.time.Duration;
@@ -58,6 +59,7 @@ public class BaseClass {
 		
 	}
 	
+	@AfterMethod
 	public void tearDown()
 	{
 		driver.quit();
