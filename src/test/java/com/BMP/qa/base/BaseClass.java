@@ -1,6 +1,5 @@
 package com.BMP.qa.base;
 
-import org.testng.annotations.AfterMethod;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.time.Duration;
@@ -11,6 +10,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.AfterMethod;
 
 public class BaseClass {
 
@@ -34,12 +34,12 @@ public class BaseClass {
 		if(browserName.equals("chrome"))
 		{
 			ChromeOptions option = new ChromeOptions();
-//			option.addArguments("--headless");
-//			option.addArguments("--no-sandbox");
-//			option.addArguments("--disable-dev-shm-usage");
-//        	option.addArguments("--remote-allow-origins=*");
-//        	option.addArguments("--disable-gpu");
-//        	option.addArguments("user-data-dir=/tmp/temporary-profile-" + System.currentTimeMillis());
+			option.addArguments("--headless");
+			option.addArguments("--no-sandbox");
+			option.addArguments("--disable-dev-shm-usage");
+        	option.addArguments("--remote-allow-origins=*");
+        	option.addArguments("--disable-gpu");
+        	option.addArguments("user-data-dir=/tmp/temporary-profile-" + System.currentTimeMillis());
 
         	driver = new ChromeDriver(option);
 		}
