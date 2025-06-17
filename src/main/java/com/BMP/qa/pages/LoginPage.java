@@ -1,5 +1,7 @@
 package com.BMP.qa.pages;
 
+import org.openqa.selenium.Alert;
+import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -26,9 +28,8 @@ public class LoginPage {
 	@FindBy(xpath = "//input[@type='reset']")
 	private WebElement btnReset;
 
-	public void clickOnReset() {
-		btnReset.click();
-	}
+	@FindBy(xpath = "//a[@href='Managerhomepage.php']")
+	private WebElement managerLinkText;
 
 	public void setUserID(String uid) {
 		txtUserID.sendKeys(uid);
@@ -42,18 +43,34 @@ public class LoginPage {
 		btnLogin.click();
 	}
 
-	public void loginToApp(String uid, String password) {
-		txtUserID.sendKeys(uid);
-		txtPassword.sendKeys(password);
-		btnLogin.click();
+	public void clickOnReset() {
+		btnReset.click();
 	}
 
-	public String getTitle() {
-		return driver.getTitle();
-	}
-
-//	public boolean getLoginErrorMessage()
-//	{
-//		boolean errorMessage = ;
+//	public void loginToApp(String uid, String password) {
+//		txtUserID.sendKeys(uid);
+//		txtPassword.sendKeys(password);
+//		btnLogin.click();
 //	}
+
+	public boolean isAlertPresent() {
+		try {
+			driver.switchTo().alert();
+			return true;
+		} catch (NoAlertPresentException e) {
+			return false;
+		}
+	}
+
+	public String getLoginErrorAlertMessage() {
+		Alert alert = driver.switchTo().alert();
+		String getAlertMessage = alert.getText();
+		alert.accept();
+		return getAlertMessage;
+	}
+
+	public boolean isManagerLinkDisplayed() {
+
+		return managerLinkText.isDisplayed();
+	}
 }

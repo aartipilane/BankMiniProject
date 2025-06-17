@@ -1,0 +1,27 @@
+2025-06-17 14:54:02,049 [main] INFO  com.BMP.qa.base.BaseClass - Test Executation is started
+2025-06-17 14:54:08,914 [main] INFO  com.BMP.qa.base.BaseClass - Logger - Login successfully
+2025-06-17 14:54:08,926 [main] INFO  com.BMP.qa.base.BaseClass - Test execution is ended here
+2025-06-17 14:54:15,490 [main] INFO  com.BMP.qa.base.BaseClass - Test Executation is started
+2025-06-17 14:54:17,751 [main] INFO  com.BMP.qa.base.BaseClass - Logger - Invalid Login
+2025-06-17 14:54:17,760 [main] INFO  com.BMP.qa.base.BaseClass - Test execution is ended here
+2025-06-17 14:54:28,045 [main] INFO  com.BMP.qa.base.BaseClass - Test Executation is started
+2025-06-17 14:54:32,153 [main] INFO  com.BMP.qa.base.BaseClass - Logger - Invalid Login
+2025-06-17 14:54:32,157 [main] INFO  com.BMP.qa.base.BaseClass - Test execution is ended here
+2025-06-17 14:58:45,386 [main] INFO  com.BMP.qa.base.BaseClass setUp - Test Executation is started
+2025-06-17 14:58:47,786 [main] INFO  com.BMP.qa.base.BaseClass loginWithInValidCredentials - Logger - Login successfully
+2025-06-17 14:58:47,799 [main] INFO  com.BMP.qa.base.BaseClass tearDown - Test execution is ended here
+2025-06-17 14:58:55,630 [main] INFO  com.BMP.qa.base.BaseClass setUp - Test Executation is started
+2025-06-17 14:58:57,913 [main] INFO  com.BMP.qa.base.BaseClass loginWithInValidCredentials - Logger - Invalid Login
+2025-06-17 14:58:57,917 [main] INFO  com.BMP.qa.base.BaseClass tearDown - Test execution is ended here
+2025-06-17 14:59:06,878 [main] INFO  com.BMP.qa.base.BaseClass setUp - Test Executation is started
+2025-06-17 14:59:09,164 [main] INFO  com.BMP.qa.base.BaseClass loginWithInValidCredentials - Logger - Invalid Login
+2025-06-17 14:59:09,171 [main] INFO  com.BMP.qa.base.BaseClass tearDown - Test execution is ended here
+2025-06-17 15:00:57,051 [main] INFO  com.BMP.qa.base.BaseClass setUp - Test Executation is started
+2025-06-17 15:00:59,275 [main] INFO  com.BMP.qa.base.BaseClass loginWithCredentials - Logger - Login successfully
+2025-06-17 15:00:59,285 [main] INFO  com.BMP.qa.base.BaseClass tearDown - Test execution is ended here
+2025-06-17 15:01:05,812 [main] INFO  com.BMP.qa.base.BaseClass setUp - Test Executation is started
+2025-06-17 15:01:08,284 [main] INFO  com.BMP.qa.base.BaseClass loginWithCredentials - Logger - Invalid Login
+2025-06-17 15:01:08,288 [main] INFO  com.BMP.qa.base.BaseClass tearDown - Test execution is ended here
+2025-06-17 15:01:23,265 [main] INFO  com.BMP.qa.base.BaseClass setUp - Test Executation is started
+2025-06-17 15:01:31,270 [main] INFO  com.BMP.qa.base.BaseClass loginWithCredentials - Logger - Invalid Login
+2025-06-17 15:01:31,278 [main] INFO  com.BMP.qa.base.BaseClass tearDown - Test execution is ended here

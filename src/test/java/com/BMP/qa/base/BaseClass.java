@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.time.Duration;
 import java.util.Properties;
 
+import org.apache.logging.log4j.LogManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -16,6 +17,7 @@ public class BaseClass {
 
 	WebDriver driver;
 	public static Properties prop;	
+	public static org.apache.logging.log4j.Logger logger;
 	
 	public void readDataFromPropertiesFile() throws IOException
 	{
@@ -28,18 +30,17 @@ public class BaseClass {
 	public WebDriver launchBrowserandURL(String browserName) throws IOException
 	{
 		readDataFromPropertiesFile();
-		
 		String url=prop.getProperty("url");
 		
 		if(browserName.equals("chrome"))
 		{
 			ChromeOptions option = new ChromeOptions();
-			option.addArguments("--headless");
-			option.addArguments("--no-sandbox");
-			option.addArguments("--disable-dev-shm-usage");
-        	option.addArguments("--remote-allow-origins=*");
-        	option.addArguments("--disable-gpu");
-        	option.addArguments("user-data-dir=/tmp/temporary-profile-" + System.currentTimeMillis());
+//			option.addArguments("--headless");
+//			option.addArguments("--no-sandbox");
+//			option.addArguments("--disable-dev-shm-usage");
+//        	option.addArguments("--remote-allow-origins=*");
+//        	option.addArguments("--disable-gpu");
+//        	option.addArguments("user-data-dir=/tmp/temporary-profile-" + System.currentTimeMillis());
 
         	driver = new ChromeDriver(option);
 		}
@@ -53,8 +54,10 @@ public class BaseClass {
 		}
 		
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 		driver.get(url);
+		
+		logger=LogManager.getLogger(BaseClass.class.getName());
 		return driver;
 		
 	}
