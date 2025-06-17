@@ -27,12 +27,13 @@ public class BaseClass {
 	}
 
 	
-	public WebDriver launchBrowserandURL(String browserName) throws IOException
+	public WebDriver launchBrowserandURL() throws IOException
 	{
 		readDataFromPropertiesFile();
 		String url=prop.getProperty("url");
+		String browser = prop.getProperty("browser");
 		
-		if(browserName.equals("chrome"))
+		if(browser.equals("chrome"))
 		{
 			ChromeOptions option = new ChromeOptions();
 //			option.addArguments("--headless");
@@ -44,11 +45,11 @@ public class BaseClass {
 
         	driver = new ChromeDriver(option);
 		}
-		else if(browserName.equals("firefox"))
+		else if(browser.equals("firefox"))
 		{
 			driver = new FirefoxDriver();
 		}
-		else if(browserName.equals("edge"))
+		else if(browser.equals("edge"))
 		{
 			driver = new EdgeDriver();
 		}

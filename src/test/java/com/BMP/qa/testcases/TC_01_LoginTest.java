@@ -27,7 +27,7 @@ public class TC_01_LoginTest extends BaseClass {
 	@BeforeMethod
 	public void setUp() throws IOException {
 		readDataFromPropertiesFile();
-		driver = launchBrowserandURL(prop.getProperty("browser"));
+		driver = launchBrowserandURL();
 		lp = new LoginPage(driver);
 		logger.info("Test Executation is started");
 

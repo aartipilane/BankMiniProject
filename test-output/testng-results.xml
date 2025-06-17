@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-06-17T15:00:50 IST" name="Default suite" finished-at="2025-06-17T15:01:31 IST" duration-ms="41186">
+  <suite started-at="2025-06-17T21:32:30 IST" name="Default suite" finished-at="2025-06-17T21:33:01 IST" duration-ms="30690">
     <groups>
     </groups>
-    <test started-at="2025-06-17T15:00:50 IST" name="Default test" finished-at="2025-06-17T15:01:31 IST" duration-ms="41186">
+    <test started-at="2025-06-17T21:32:30 IST" name="Default test" finished-at="2025-06-17T21:33:01 IST" duration-ms="30690">
       <class name="com.BMP.qa.testcases.TC_01_LoginTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.BMP.qa.testcases.TC_01_LoginTest@7db12bb6]" started-at="2025-06-17T15:00:51 IST" name="setUp" finished-at="2025-06-17T15:00:57 IST" duration-ms="5703" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.BMP.qa.testcases.TC_01_LoginTest@b9b00e0]" started-at="2025-06-17T21:32:31 IST" name="setUp" finished-at="2025-06-17T21:32:40 IST" duration-ms="8601" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginWithCredentials(java.lang.String,java.lang.String)[pri:0, instance:com.BMP.qa.testcases.TC_01_LoginTest@7db12bb6]" started-at="2025-06-17T15:00:57 IST" name="loginWithCredentials" data-provider="userCredentials" finished-at="2025-06-17T15:00:59 IST" duration-ms="2220" status="PASS">
+        <test-method signature="loginWithCredentials(java.lang.String,java.lang.String)[pri:0, instance:com.BMP.qa.testcases.TC_01_LoginTest@b9b00e0]" started-at="2025-06-17T21:32:40 IST" name="loginWithCredentials" data-provider="userCredentials" finished-at="2025-06-17T21:32:43 IST" duration-ms="3106" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -27,15 +27,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginWithCredentials -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.BMP.qa.testcases.TC_01_LoginTest@7db12bb6]" started-at="2025-06-17T15:00:59 IST" name="tearDown" finished-at="2025-06-17T15:00:59 IST" duration-ms="100" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.BMP.qa.testcases.TC_01_LoginTest@b9b00e0]" started-at="2025-06-17T21:32:43 IST" name="tearDown" finished-at="2025-06-17T21:32:44 IST" duration-ms="1153" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.BMP.qa.testcases.TC_01_LoginTest@7db12bb6]" started-at="2025-06-17T15:00:59 IST" name="setUp" finished-at="2025-06-17T15:01:05 IST" duration-ms="6430" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.BMP.qa.testcases.TC_01_LoginTest@b9b00e0]" started-at="2025-06-17T21:32:44 IST" name="setUp" finished-at="2025-06-17T21:32:49 IST" duration-ms="5263" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginWithCredentials(java.lang.String,java.lang.String)[pri:0, instance:com.BMP.qa.testcases.TC_01_LoginTest@7db12bb6]" started-at="2025-06-17T15:01:05 IST" name="loginWithCredentials" data-provider="userCredentials" finished-at="2025-06-17T15:01:08 IST" duration-ms="2470" status="PASS">
+        <test-method signature="loginWithCredentials(java.lang.String,java.lang.String)[pri:0, instance:com.BMP.qa.testcases.TC_01_LoginTest@b9b00e0]" started-at="2025-06-17T21:32:49 IST" name="loginWithCredentials" data-provider="userCredentials" finished-at="2025-06-17T21:32:51 IST" duration-ms="2096" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -51,15 +51,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginWithCredentials -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.BMP.qa.testcases.TC_01_LoginTest@7db12bb6]" started-at="2025-06-17T15:01:08 IST" name="tearDown" finished-at="2025-06-17T15:01:08 IST" duration-ms="81" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.BMP.qa.testcases.TC_01_LoginTest@b9b00e0]" started-at="2025-06-17T21:32:51 IST" name="tearDown" finished-at="2025-06-17T21:32:52 IST" duration-ms="876" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.BMP.qa.testcases.TC_01_LoginTest@7db12bb6]" started-at="2025-06-17T15:01:08 IST" name="setUp" finished-at="2025-06-17T15:01:23 IST" duration-ms="14896" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.BMP.qa.testcases.TC_01_LoginTest@b9b00e0]" started-at="2025-06-17T21:32:52 IST" name="setUp" finished-at="2025-06-17T21:32:58 IST" duration-ms="5641" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginWithCredentials(java.lang.String,java.lang.String)[pri:0, instance:com.BMP.qa.testcases.TC_01_LoginTest@7db12bb6]" started-at="2025-06-17T15:01:23 IST" name="loginWithCredentials" data-provider="userCredentials" finished-at="2025-06-17T15:01:31 IST" duration-ms="8004" status="PASS">
+        <test-method signature="loginWithCredentials(java.lang.String,java.lang.String)[pri:0, instance:com.BMP.qa.testcases.TC_01_LoginTest@b9b00e0]" started-at="2025-06-17T21:32:58 IST" name="loginWithCredentials" data-provider="userCredentials" finished-at="2025-06-17T21:33:00 IST" duration-ms="2134" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -75,7 +75,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginWithCredentials -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.BMP.qa.testcases.TC_01_LoginTest@7db12bb6]" started-at="2025-06-17T15:01:31 IST" name="tearDown" finished-at="2025-06-17T15:01:31 IST" duration-ms="86" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.BMP.qa.testcases.TC_01_LoginTest@b9b00e0]" started-at="2025-06-17T21:33:00 IST" name="tearDown" finished-at="2025-06-17T21:33:01 IST" duration-ms="967" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
