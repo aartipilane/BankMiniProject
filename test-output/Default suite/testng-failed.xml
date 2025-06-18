@@ -5,9 +5,9 @@
     <classes>
       <class name="com.BMP.qa.testcases.TC_01_LoginTest">
         <methods>
-          <include name="setUp"/>
+          <include name="loginWithCredentials" invocation-numbers="0 1 2"/>
           <include name="tearDown"/>
-          <include name="loginWithCredentials"/>
+          <include name="setUp"/>
         </methods>
       </class> <!-- com.BMP.qa.testcases.TC_01_LoginTest -->
     </classes>

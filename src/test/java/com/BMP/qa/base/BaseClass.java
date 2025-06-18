@@ -6,29 +6,26 @@ import java.time.Duration;
 import java.util.Properties;
 
 import org.apache.logging.log4j.LogManager;
+import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 
 public class BaseClass {
 
-	WebDriver driver;
+	protected WebDriver driver;
 	public static Properties prop;	
 	public static org.apache.logging.log4j.Logger logger;
 	
-	public void readDataFromPropertiesFile() throws IOException
-	{
-		FileInputStream fis = new FileInputStream("/home/cm_geeta/AutomationTesting/Practice2024/BankMiniProject/src/main/java/com/BMP/qa/config/userData.properties");
-		prop = new Properties();
-		prop.load(fis);		
-	}
+	@BeforeMethod
+	public void setUp() throws IOException {
+		logger=LogManager.getLogger(BaseClass.class.getName());
+		logger.info("Test Executation is started");
 
-	
-	public WebDriver launchBrowserandURL() throws IOException
-	{
 		readDataFromPropertiesFile();
 		String url=prop.getProperty("url");
 		String browser = prop.getProperty("browser");
@@ -57,15 +54,32 @@ public class BaseClass {
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 		driver.get(url);
-		
-		logger=LogManager.getLogger(BaseClass.class.getName());
-		return driver;
-		
+
+
 	}
-	
+
 	@AfterMethod
-	public void tearDown()
-	{
+	public void tearDown() {
+		logger.info("Test execution is ended here");
 		driver.quit();
 	}
+	
+	
+	public void readDataFromPropertiesFile() throws IOException
+	{
+		FileInputStream fis = new FileInputStream("/home/cm_geeta/AutomationTesting/Practice2024/BankMiniProject/src/main/java/com/BMP/qa/config/userData.properties");
+		prop = new Properties();
+		prop.load(fis);		
+	}
+	
+	public boolean isAlertPresent() {
+		try {
+			driver.switchTo().alert();
+			return true;
+		} catch (NoAlertPresentException e) {
+			return false;
+		}
+	}
+	
+	
 }

@@ -1,7 +1,6 @@
 package com.BMP.qa.pages;
 
 import org.openqa.selenium.Alert;
-import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -53,14 +52,7 @@ public class LoginPage {
 //		btnLogin.click();
 //	}
 
-	public boolean isAlertPresent() {
-		try {
-			driver.switchTo().alert();
-			return true;
-		} catch (NoAlertPresentException e) {
-			return false;
-		}
-	}
+	
 
 	public String getLoginErrorAlertMessage() {
 		Alert alert = driver.switchTo().alert();
