@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,   3 passed</span>
+                    <span class="method-stats">4 methods,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -101,6 +101,11 @@
                       <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
                     </span>
                     <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.BMP.qa.testcases.TC_02_AddCustomerTest" class="method navigator-link" hash-for-method="addNewCustomer">addNewCustomer</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="com.BMP.qa.testcases.TC_01_LoginTest" class="method navigator-link" hash-for-method="loginWithCredentials(mngr625137, zYdAduj)">loginWithCredentials(mngr625137, zYdAduj)</a> <!-- method navigator-link -->
@@ -160,6 +165,21 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.BMP.qa.testcases.TC_02_AddCustomerTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addNewCustomer">
+                  </a> <!-- addNewCustomer -->
+                  <span class="method-name">addNewCustomer</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -176,6 +196,7 @@
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.BMP.qa.testcases.TC_01_LoginTest&quot;/&gt;
+      &lt;class name=&quot;com.BMP.qa.testcases.TC_02_AddCustomerTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -189,7 +210,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (1 class)</span>
+                <span class="test-name">Test (2 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -215,24 +236,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'loginWithCredentials')
-data.setCell(0, 2, 'com.BMP.qa.testcases.TC_01_LoginTest')
-data.setCell(0, 3, 2814);
+data.setCell(0, 1, 'addNewCustomer')
+data.setCell(0, 2, 'com.BMP.qa.testcases.TC_02_AddCustomerTest')
+data.setCell(0, 3, 4128);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'loginWithCredentials')
 data.setCell(1, 2, 'com.BMP.qa.testcases.TC_01_LoginTest')
-data.setCell(1, 3, 2132);
+data.setCell(1, 3, 2157);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'loginWithCredentials')
 data.setCell(2, 2, 'com.BMP.qa.testcases.TC_01_LoginTest')
-data.setCell(2, 3, 1763);
+data.setCell(2, 3, 2135);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'loginWithCredentials')
+data.setCell(3, 2, 'com.BMP.qa.testcases.TC_01_LoginTest')
+data.setCell(3, 3, 2030);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 6 seconds</span>
+              <span class="suite-total-time">Total running time: 10 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -265,35 +290,50 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">loginWithCredentials(mngr625137, zYdAduj)</span>
-                <span class="method-start">8911 ms</span>
+                <span class="method-start">5716 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">11728 ms</span>
+                <span class="method-start">7877 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">11828 ms</span>
+                <span class="method-start">7976 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">loginWithCredentials(aarti123, aarti123)</span>
-                <span class="method-start">14333 ms</span>
+                <span class="method-start">12296 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">16467 ms</span>
+                <span class="method-start">14328 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">16547 ms</span>
+                <span class="method-start">14406 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">loginWithCredentials(aarti1234, aarti1234)</span>
-                <span class="method-start">20747 ms</span>
+                <span class="method-start">16255 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">22513 ms</span>
+                <span class="method-start">18393 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.BMP.qa.testcases.TC_02_AddCustomerTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">18472 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">addNewCustomer</span>
+                <span class="method-start">22820 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">26950 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

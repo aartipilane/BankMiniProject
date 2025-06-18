@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+import org.apache.commons.lang3.RandomStringUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -22,9 +23,21 @@ public class JavaUtility {
 	
 	public static String captureScreenShot(WebDriver driver, String testName) throws IOException
 	{
+		if (driver == null) {
+	        System.out.println("Driver is null. Screenshot not taken.");
+	        return null;
+	    }
 		File srcFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-		String destFile = System.getProperty("usr.dir")+"/ScreenShots/"+testName+JavaUtility.getDateTime()+".png";
+		String destFile = System.getProperty("user.dir")+"/ScreenShots/"+testName+JavaUtility.getDateTime()+".png";
 		FileHandler.copy(srcFile, new File (destFile));
 		return destFile;
+	}
+	
+	public static String  generateEmailID()
+	{
+		String randomNo = RandomStringUtils.randomAlphanumeric(4);
+		String emailID = "user"+randomNo+"@gmail.com";
+		return emailID;
+		
 	}
 }
