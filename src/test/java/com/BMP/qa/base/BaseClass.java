@@ -33,12 +33,12 @@ public class BaseClass {
 		if(browser.equals("chrome"))
 		{
 			ChromeOptions option = new ChromeOptions();
-//			option.addArguments("--headless");
-//			option.addArguments("--no-sandbox");
-//			option.addArguments("--disable-dev-shm-usage");
-//        	option.addArguments("--remote-allow-origins=*");
-//        	option.addArguments("--disable-gpu");
-//        	option.addArguments("user-data-dir=/tmp/temporary-profile-" + System.currentTimeMillis());
+			option.addArguments("--headless");
+			option.addArguments("--no-sandbox");
+			option.addArguments("--disable-dev-shm-usage");
+        	option.addArguments("--remote-allow-origins=*");
+        	option.addArguments("--disable-gpu");
+        	option.addArguments("user-data-dir=/tmp/temporary-profile-" + System.currentTimeMillis());
 
         	driver = new ChromeDriver(option);
 		}
